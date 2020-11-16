@@ -34,9 +34,9 @@ function moviesApi(app) {
   router.post("/", async function (req, res, next) {
     const { body: movie } = req;
     try {
-      const createMovieId = await movieServices.createMovie({ movie });
+      const createdMovieId = await movieServices.createMovie({ movie });
       res.status(201).json({
-        data: createMovieId,
+        data: createdMovieId,
         message: "movie created",
       });
     } catch (err) {
@@ -62,9 +62,9 @@ function moviesApi(app) {
   router.delete("/:movieId", async function (req, res, next) {
     const { movieId } = req.params;
     try {
-      const deleteMovieId = await movieServices.deleteMovie({ movieId });
+      const deletedMovieId = await movieServices.deleteMovie({ movieId });
       res.status(200).json({
-        data: deleteMovieId,
+        data: deletedMovieId,
         message: "movie deleted",
       });
     } catch (err) {
