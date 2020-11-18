@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/CLGonzalezGroh/03backendnode#readme",
   "dependencies": {
+    "@hapi/boom": "^9.1.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "joi": "^17.3.0",
     "moment": "^2.29.1",
     "mongodb": "^3.6.3"
   }
